@@ -158,7 +158,7 @@
 
 @media (min-width: 1920px) {
   .loom-hero-store-title {
-    max-width: 100%;
+    max-width: min(100%, calc(1920px - 4rem));
   }
 }
 
