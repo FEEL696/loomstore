@@ -232,7 +232,7 @@ export function MainSection() {
 
       {/* Центр: LOOM STORE — слой под картинкой (z-0); с 1920 — max-w + px-8 как у шапки; ширина текста — .loom-hero-store-title */}
       <div
-        className="pointer-events-none absolute left-1/2 top-[36%] z-0 flex w-full max-w-[100vw] -translate-x-1/2 items-center justify-center px-[15px] max-md:translate-y-[calc(-50%-40px)] md:max-[1199px]:hidden min-[1200px]:top-1/2 min-[1200px]:-translate-y-1/2 min-[1920px]:max-w-[1920px] min-[1920px]:px-8"
+        className="pointer-events-none absolute left-1/2 top-[36%] z-0 flex w-full max-w-[100vw] -translate-x-1/2 items-center justify-center px-[15px] max-md:translate-y-[calc(-50%-40px)] md:max-[1199px]:hidden min-[1200px]:top-1/2 min-[1200px]:-translate-y-1/2 min-[1920px]:max-w-[1920px] min-[1920px]:min-w-0 min-[1920px]:overflow-x-clip min-[1920px]:px-8"
         aria-hidden
       >
         <span

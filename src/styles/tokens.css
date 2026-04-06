@@ -165,10 +165,21 @@
     right: max(2rem, calc((100vw - 1920px) / 2 + 2rem)) !important;
   }
 
+  /*
+   * Одна строка «LOOM STORE»: при max 14rem из --loom-store-word-size глифы шире
+   * колонки (как у шапки: min(100vw,1920px) − lg:px-8 с двух сторон).
+   * Подбираем font-size как min(макета, вписывание в доступную ширину).
+   * Делитель ~9.2 под широкий Charito; при смене шрифта можно чуть подкрутить.
+   */
   .loom-hero-store-title {
-    max-width: min(100%, calc(1920px - 4rem));
+    max-width: 100%;
     margin-left: 0;
     margin-right: 0;
+    box-sizing: border-box;
+    font-size: min(
+      var(--loom-store-word-size),
+      calc((min(100vw, 1920px) - 8rem) / 9.2)
+    );
   }
 }
 
