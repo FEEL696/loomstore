@@ -168,7 +168,7 @@
   /*
    * Одна строка «LOOM STORE»: при max 14rem из --loom-store-word-size глифы шире
    * колонки (как у шапки: min(100vw,1920px) − lg:px-8 с двух сторон).
-   * Делитель ~10.5 — запас, чтобы не резалась последняя буква и не упиралось в clip.
+   * Делитель 10 — баланс между кеглем и вписыванием в ширину.
    */
   .loom-hero-store-title {
     max-width: 100%;
@@ -177,7 +177,7 @@
     box-sizing: border-box;
     font-size: min(
       var(--loom-store-word-size),
-      calc((min(100vw, 1920px) - 8rem) / 10.5)
+      calc((min(100vw, 1920px) - 8rem) / 10)
     );
   }
 }
