@@ -118,13 +118,13 @@
   margin-bottom: -0.06em;
 }
 
-/* Только подвал: оптический сдвиг к низу страницы (hero не использует) */
+/* Только подвал: оптический сдвиг к низу страницы (hero не использует); +0.75rem (12px) ниже, кроме моб — там .footer-loom-logo-mobile */
 .footer-loom-logo {
   text-align: center;
   white-space: nowrap;
   padding: 0 15px;
   box-sizing: border-box;
-  transform: translateY(calc(0.02em + 6px));
+  transform: translateY(calc(0.02em + 6px + 0.75rem));
 }
 
 @media (min-width: 768px) {
