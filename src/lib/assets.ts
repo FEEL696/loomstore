@@ -1,0 +1,18 @@
+export const images = {
+  heroMain: "/Main/AppleWatch_main.png" as const,
+  founderAvatar: "/Main/ava_founder.png" as const,
+  arrowUpRight: "/icons/arrow-up-right.svg" as const,
+  arrowDown: "/icons/arrow-down.svg" as const,
+  arrowRight: "/icons/arrow-right.svg" as const,
+  product1: "/AirPods/airpods%20preview.png" as const,
+  product2: "/applewatch/applewatch%20preview.jpg" as const,
+  product3: "/ipad/iPad/iPad%20preview.jpg" as const,
+  product4: "/ipad/iPad%20Air/iPad%20air%20preview.jpg" as const,
+  article1: "/iphone/iPhone%2017/iphone%2017%20preview.jpg" as const,
+  article2: "/macbook/MacBook%20Air/MacBook%20air%20preview.jpg" as const,
+  article3: "/ipad/iPad%20Pro/iPad%20Pro%20preview.jpg" as const,
+  article4: "/AirPods/airpods%20preview.png" as const,
+  reviewRating: "/icons/review-stars.svg" as const,
+  quoteIcon: "/icons/quote.svg" as const,
+  macbook: "/macbook/MacBook%20Air/MacBook%20air%20preview.jpg" as const,
+} as const;
