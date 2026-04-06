@@ -204,14 +204,14 @@ export function MainSection() {
         </div>
       </div>
 
-      {/* Основатель: мобила и десктоп ≥1200; с 1920 — inset как у шапки mx-auto max-w-[1920px] lg:px-8 */}
-      <div className="absolute left-[15px] top-14 z-20 md:max-[1199px]:hidden md:left-8 md:top-[calc(45%-108px)] min-[1200px]:top-[calc(50%-130px)] lg:left-12 min-[1920px]:left-[max(2rem,calc((100vw-1920px)/2+2rem))]">
+      {/* Основатель: мобила и десктоп ≥1200; с 1920 — .loom-hero-inset-left как у шапки */}
+      <div className="loom-hero-inset-left absolute left-[15px] top-14 z-20 md:max-[1199px]:hidden md:left-8 md:top-[calc(45%-108px)] min-[1200px]:top-[calc(50%-130px)] lg:left-12">
         <FounderCard />
       </div>
 
       {/* Десктоп: сменяющийся текст справа — нижний край чуть выше верхнего края LOOM STORE (масштаб с --loom-store-word-size) */}
       <div
-        className="absolute right-[15px] z-20 hidden max-w-[min(100%,calc(100vw-30px))] -translate-y-full text-right min-[1200px]:block md:right-8 lg:right-12 min-[1920px]:right-[max(2rem,calc((100vw-1920px)/2+2rem))]"
+        className="loom-hero-inset-right absolute right-[15px] z-20 hidden max-w-[min(100%,calc(100vw-30px))] -translate-y-full text-right min-[1200px]:block md:right-8 lg:right-12"
         style={{
           top: "calc(50% - 0.5 * var(--loom-store-word-size, 10rem) - 0.75rem)",
         }}
@@ -230,9 +230,9 @@ export function MainSection() {
         </AnimatePresence>
       </div>
 
-      {/* Центр: LOOM STORE — слой под картинкой (z-0); с 1920 — max-w колонки как у шапки; отступы текста через .loom-hero-store-title */}
+      {/* Центр: LOOM STORE — слой под картинкой (z-0); с 1920 — max-w + px-8 как у шапки; ширина текста — .loom-hero-store-title */}
       <div
-        className="pointer-events-none absolute left-1/2 top-[36%] z-0 flex w-full max-w-[100vw] -translate-x-1/2 items-center justify-center px-[15px] max-md:translate-y-[calc(-50%-40px)] md:max-[1199px]:hidden min-[1200px]:top-1/2 min-[1200px]:-translate-y-1/2 min-[1920px]:max-w-[1920px]"
+        className="pointer-events-none absolute left-1/2 top-[36%] z-0 flex w-full max-w-[100vw] -translate-x-1/2 items-center justify-center px-[15px] max-md:translate-y-[calc(-50%-40px)] md:max-[1199px]:hidden min-[1200px]:top-1/2 min-[1200px]:-translate-y-1/2 min-[1920px]:max-w-[1920px] min-[1920px]:px-8"
         aria-hidden
       >
         <span
@@ -348,14 +348,14 @@ export function MainSection() {
       </div>
 
       {/* ≥1200: описание слева снизу */}
-      <div className="absolute bottom-6 left-[15px] z-20 hidden max-w-[min(455px,calc(100vw-30px))] min-[1200px]:block md:left-8 lg:left-12 min-[1920px]:left-[max(2rem,calc((100vw-1920px)/2+2rem))]">
+      <div className="loom-hero-inset-left absolute bottom-6 left-[15px] z-20 hidden max-w-[min(455px,calc(100vw-30px))] min-[1200px]:block md:left-8 lg:left-12">
         <p className="loom-hero-lead">
           iPhone, MacBook, iPad и аксессуары Apple с гарантией, быстрой доставкой и профессиональной поддержкой
         </p>
       </div>
 
       {/* ≥1200: плашки справа снизу */}
-      <div className="absolute bottom-6 right-[15px] z-20 hidden max-w-[calc(100vw-30px)] min-[1200px]:flex min-[1200px]:flex-col min-[1200px]:items-end min-[1200px]:gap-3 md:right-8 md:gap-4 lg:right-12 min-[1920px]:right-[max(2rem,calc((100vw-1920px)/2+2rem))]">
+      <div className="loom-hero-inset-right absolute bottom-6 right-[15px] z-20 hidden max-w-[calc(100vw-30px)] min-[1200px]:flex min-[1200px]:flex-col min-[1200px]:items-end min-[1200px]:gap-3 md:right-8 md:gap-4 lg:right-12">
         <div className="flex flex-wrap justify-end gap-3 md:gap-4">
           {ROW1.map((cat) => {
             const active = index === cat.slideIndex;

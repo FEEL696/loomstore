@@ -157,8 +157,18 @@
 }
 
 @media (min-width: 1920px) {
+  .loom-hero-inset-left {
+    left: max(2rem, calc((100vw - 1920px) / 2 + 2rem)) !important;
+  }
+
+  .loom-hero-inset-right {
+    right: max(2rem, calc((100vw - 1920px) / 2 + 2rem)) !important;
+  }
+
   .loom-hero-store-title {
     max-width: min(100%, calc(1920px - 4rem));
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
