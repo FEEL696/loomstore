@@ -133,6 +133,13 @@
   }
 }
 
+/* md+ и до колонки 1920px: сдвиг вниз на 5px (0.3125rem) меньше — не резать глифы у overflow футера */
+@media (min-width: 768px) and (max-width: 1919px) {
+  .footer-loom-logo {
+    transform: translateY(calc(0.02em + 6px + 0.75rem - 0.3125rem));
+  }
+}
+
 .footer-loom-logo-mobile {
   font-family: var(--font-charito), "Charito", var(--font-montserrat), sans-serif;
   font-size: clamp(2.75rem, 14vw, 5.5rem);
