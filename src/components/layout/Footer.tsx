@@ -99,7 +99,10 @@ export function Footer() {
           <span className="block">LOOM</span>
           <span className="block">STORE</span>
         </p>
-        <p className="footer-loom-logo m-0 hidden w-full pb-0 pt-0 text-center md:block" aria-hidden>
+        <p
+          className="footer-loom-logo loom-hero-store-title my-0 hidden w-full pb-0 pt-0 text-center whitespace-nowrap md:mx-auto md:block"
+          aria-hidden
+        >
           LOOM STORE
         </p>
       </div>

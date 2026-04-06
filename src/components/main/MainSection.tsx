@@ -28,8 +28,7 @@ const ROW2 = [
 
 const SLIDE_DURATION_MS = 4000;
 
-const heroTitleClass =
-  "loom-hero-store-title whitespace-nowrap font-normal leading-none text-[#221f1f]";
+const heroTitleClass = "loom-hero-store-title whitespace-nowrap";
 
 const founderCardClassName =
   "loom-founder-card inline-flex max-w-[min(100%,calc(100vw-30px))] items-center gap-2 border border-[#c9c9c9] bg-white px-2 py-1.5 transition-[border-color,background-color,box-shadow] duration-200 hover:border-[#221f1f] focus:outline-none focus:ring-2 focus:ring-[#221f1f] focus:ring-offset-2 min-[1200px]:gap-3 min-[1200px]:px-3 min-[1200px]:py-2.5";
@@ -96,12 +95,7 @@ export function MainSection() {
                 className="pointer-events-none absolute left-1/2 top-[46%] z-0 flex -translate-x-1/2 -translate-y-1/2 justify-center"
                 aria-hidden
               >
-                <span
-                  className={heroTitleClass}
-                  style={{ fontFamily: "var(--font-charito), sans-serif" }}
-                >
-                  LOOM STORE
-                </span>
+                <span className={heroTitleClass}>LOOM STORE</span>
               </div>
               <div
                 className="absolute left-1/2 top-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center"
@@ -235,12 +229,7 @@ export function MainSection() {
         className="pointer-events-none absolute left-1/2 top-[36%] z-0 flex w-full max-w-[100vw] -translate-x-1/2 items-center justify-center px-[15px] max-md:translate-y-[calc(-50%-40px)] md:max-[1199px]:hidden min-[1200px]:top-1/2 min-[1200px]:-translate-y-1/2 min-[1920px]:max-w-[1920px] min-[1920px]:min-w-0 min-[1920px]:overflow-x-clip min-[1920px]:px-8"
         aria-hidden
       >
-        <span
-          className={heroTitleClass}
-          style={{ fontFamily: "var(--font-charito), sans-serif" }}
-        >
-          LOOM STORE
-        </span>
+        <span className={heroTitleClass}>LOOM STORE</span>
       </div>
 
       {/* Картинка — мобила и десктоп ≥1200 */}

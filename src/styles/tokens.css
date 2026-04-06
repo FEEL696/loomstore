@@ -118,29 +118,18 @@
   margin-bottom: -0.06em;
 }
 
+/* Только подвал: оптический сдвиг к низу страницы (hero не использует) */
 .footer-loom-logo {
-  font-family: var(--font-charito), "Charito", var(--font-montserrat), sans-serif;
-  font-weight: 400;
-  line-height: 0.82;
-  letter-spacing: -0.02em;
-  color: #221f1f;
   text-align: center;
   white-space: nowrap;
-  margin: 0;
   padding: 0 15px;
-  max-width: 100%;
   box-sizing: border-box;
   transform: translateY(calc(0.02em + 6px));
 }
 
-/* Подвал LOOM STORE: те же размеры, что .loom-hero-store-title (не мобильная вёрстка) */
 @media (min-width: 768px) {
   .footer-loom-logo {
     display: block;
-    font-size: var(--loom-store-title-font-size);
-    max-width: min(100%, 100vw - 30px);
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -157,8 +146,14 @@
   transform: translateY(-4px);
 }
 
+/* Hero и подвал (md+): один кегль и та же типографика, что в MainSection (Charito, leading-none) */
 .loom-hero-store-title {
+  font-family: var(--font-charito), "Charito", var(--font-montserrat), sans-serif;
   font-size: var(--loom-store-title-font-size);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #221f1f;
   max-width: min(100%, 100vw - 30px);
   margin-left: auto;
   margin-right: auto;
